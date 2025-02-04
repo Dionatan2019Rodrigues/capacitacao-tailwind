@@ -1,2 +1,4 @@
 # capacitacao-tailwind
  Capacitação de Tailwind promovida pela empresa Compact Jr
+
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
