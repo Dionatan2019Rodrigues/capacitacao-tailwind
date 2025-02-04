@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body class="bg-gray-50">
     <header
@@ -31,5 +36,27 @@
         <a href="#" class="hover:text-cyan-500">Contato</a>
       </nav>
     </header>
+
+    <main>
+      <!-- Banner -->
+      <section class="banner flex flex-col justify-center items-center gap-y-2">
+        <p class="text-5xl font-light text-cyan-50">Onde você quer ir?</p>
+        <p class="text-xl text-cyan-50">
+          Escolha o estado e cidade para achar os melhores resorts
+        </p>
+        <form class="flex gap-5">
+          <select class="px-5 py-3 bg-cyan-50 text-cyan-900 rounded-xl">
+            <option value="">Escolha estado</option>
+          </select>
+          <select class="px-5 py-3 bg-cyan-50 text-cyan-900 rounded-xl">
+            <option value="">Escolha cidade</option>
+          </select>
+          <button class="px-5 py-3 text-cyan-50 bg-orange-400 rounded-xl flex gap-2 items-center">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Pesquisar resort
+          </button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
