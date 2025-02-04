@@ -19,7 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
-  <body class="bg-gray-50">
+  <body class="bg-gray-50 text-gray-500">
     <header
       class="flex items-center w-full justify-between px-32 py-6 font-noto"
     >
@@ -51,11 +51,47 @@
           <select class="px-5 py-3 bg-cyan-50 text-cyan-900 rounded-xl">
             <option value="">Escolha cidade</option>
           </select>
-          <button class="px-5 py-3 text-cyan-50 bg-orange-400 rounded-xl flex gap-2 items-center">
+          <button
+            class="px-5 py-3 text-cyan-50 bg-orange-400 rounded-xl flex gap-2 items-center"
+          >
             <i class="fa-solid fa-magnifying-glass"></i>
             Pesquisar resort
           </button>
         </form>
+      </section>
+
+      <!-- Resort em Destaque -->
+      <section class="flex px-32 py-20">
+        <div class="flex flex-col gap-8 pr-10">
+          <div class="flex flex-col gap-2">
+            <p class="text-sm font-semibold">RESORT EM DESTAQUE</p>
+            <p class="text-2xl text-cyan-900">Ecoresort Praia do Forte Bahia</p>
+            <p class="text-sm font-medium">Hotel qualidade 5 estrelas</p>
+          </div>
+          <div class="flex flex-col gap-3">
+            <p class="indent-6 text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+              ipsam! Alias ipsa veniam obcaecati dolorum officiis aliquam error
+              beatae, blanditiis modi fugit quam? Optio minima sequi veniam
+              recusandae repellat? Repellendus?
+            </p>
+            <p class="indent-6 text-justify">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              a nisi quis deserunt sequi amet, aspernatur aut obcaecati omnis
+              suscipit dolor facere esse, quasi inventore. Officiis vel
+              repellendus iste fugiat.
+            </p>
+            <a
+              href="#"
+              class="bg-orange-400 text-gray-600 rounded w-[200px] flex items-center justify-center gap-5 p-2"
+            >
+              Solicitar Reserva <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="flex-shrink-0 ml-auto">
+          <img src="./images/featured-img.png" alt="Ecoresort" width="450px" />
+        </div>
       </section>
     </main>
   </body>
