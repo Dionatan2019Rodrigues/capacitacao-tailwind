@@ -21,7 +21,7 @@
   </head>
   <body class="bg-gray-50 text-gray-500">
     <header
-      class="flex items-center w-full justify-between px-32 py-6 font-noto"
+      class="flex items-center w-full justify-between md:px-20 lg:px-32 py-6 font-noto"
     >
       <a
         href="#"
@@ -40,11 +40,15 @@
     <main>
       <!-- Banner -->
       <section class="banner flex flex-col justify-center items-center gap-y-2">
-        <p class="text-5xl font-light text-cyan-50">Onde você quer ir?</p>
-        <p class="text-xl text-cyan-50">
+        <p class="text-3xl lg:text-5xl font-light text-cyan-50">
+          Onde você quer ir?
+        </p>
+        <p class="text-cyan-50">
           Escolha o estado e cidade para achar os melhores resorts
         </p>
-        <form class="flex gap-5">
+        <form
+          class="grid grid-cols-2 grid-rows-2 md:flex md:gap-5 lg:flex gap-5"
+        >
           <select class="px-5 py-3 bg-cyan-50 text-cyan-900 rounded-xl">
             <option value="">Escolha estado</option>
           </select>
@@ -52,7 +56,7 @@
             <option value="">Escolha cidade</option>
           </select>
           <button
-            class="px-5 py-3 text-cyan-50 bg-orange-400 rounded-xl flex gap-2 items-center"
+            class="col-span-2 px-5 py-3 text-cyan-50 bg-orange-400 rounded-xl flex gap-2 items-center justify-center"
           >
             <i class="fa-solid fa-magnifying-glass"></i>
             Pesquisar resort
@@ -61,8 +65,10 @@
       </section>
 
       <!-- Resort em Destaque -->
-      <section class="flex px-32 py-20">
-        <div class="flex flex-col gap-8 pr-10">
+      <section
+        class="flex flex-col-reverse px-9 py-20 gap-5 md:px-20 lg:flex-row lg:px-32"
+      >
+        <div class="flex flex-col gap-8 lg:pr-10">
           <div class="flex flex-col gap-2">
             <p class="text-sm font-semibold">RESORT EM DESTAQUE</p>
             <p class="text-2xl text-cyan-900">Ecoresort Praia do Forte Bahia</p>
@@ -83,23 +89,29 @@
             </p>
             <a
               href="#"
-              class="bg-orange-400 text-gray-600 rounded w-[200px] flex items-center justify-center gap-5 p-2"
+              class="bg-orange-400 text-gray-600 rounded w-[200px] flex items-center justify-center gap-5 p-2 self-center lg:self-start"
             >
               Solicitar Reserva <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
-        <div class="flex-shrink-0 ml-auto">
-          <img src="./images/featured-img.png" alt="Ecoresort" width="450px" />
+        <div class="lg:flex-shrink-0 lg:ml-auto">
+          <img
+            src="./images/featured-img.png"
+            alt="Ecoresort"
+            class="w-[450px] md:w-full lg:w-[450px]"
+          />
         </div>
       </section>
 
       <!-- Resorts grid -->
       <section
-        class="flex justify-center items-center flex-col px-32 w-full gap-8"
+        class="flex justify-center items-center flex-col px-9 md:px-20 lg:px-32 w-full gap-8"
       >
         <h3 class="text-2xl">Conheça mais resorts</h3>
-        <div class="grid grid-cols-4 grid-rows-2 gap-4 w-full h-90">
+        <div
+          class="flex flex-col gap-5 lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-4 w-full lg:h-90"
+        >
           <div
             class="relative col-span-2 row-span-2 rounded-lg overflow-hidden"
           >
@@ -166,7 +178,9 @@
       </section>
 
       <!-- Form serach -->
-      <form class="flex gap-5 justify-center items-center py-20">
+      <form
+        class="grid grid-cols-2 grid-rows-2 gap-5 py-20 px-9 md:flex md:justify-center lg:flex lg:justify-center"
+      >
         <select class="px-5 py-3 bg-cyan-50 text-cyan-900 rounded-xl">
           <option value="">Escolha estado</option>
         </select>
@@ -174,7 +188,7 @@
           <option value="">Escolha cidade</option>
         </select>
         <button
-          class="px-5 py-3 text-cyan-50 bg-orange-400 rounded-xl flex gap-2 items-center"
+          class="col-span-2 px-5 py-3 text-cyan-50 bg-orange-400 rounded-xl flex gap-2 items-center justify-center"
         >
           <i class="fa-solid fa-magnifying-glass"></i>
           Pesquisar resort
@@ -182,7 +196,7 @@
       </form>
       <!-- Footer-->
       <footer
-        class="flex justify-between items-center px-32 py-6 border-t border-gray-400"
+        class="flex justify-between items-center px-9 py-6 border-t border-gray-400 md:px-20 lg:px-32"
       >
         <a
           href="#"
