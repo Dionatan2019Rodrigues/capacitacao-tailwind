@@ -30,7 +30,7 @@ Devido a nova atualização do tailwind no início de 2025 durante o desenvolvim
 
 <p>
     <strong>Site : </strong>
-    <a href="capacitacao-tailwind.vercel.app" target="_blank" rel="external">Capacitação Tailwind</a>
+    <a href="https://capacitacao-tailwind.vercel.app" target="_blank" rel="external">Capacitação Tailwind</a>
 </p>
 <p>
    <strong>Linkedin : </strong>
